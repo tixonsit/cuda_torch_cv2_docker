@@ -23,10 +23,12 @@ Launch in bash:
 `docker run --gpus all -it opencv-cuda:4.8.1 bash`
 
 Test:
-`python3 -c "import cv2; print(cv2.__version__); print(cv2.cuda.getCudaEnabledDeviceCount()); import torch; print(torch.__version__); print(torch.cuda.is_available())"`
-`>>> 
+```
+python3 -c "import cv2; print(cv2.__version__); print(cv2.cuda.getCudaEnabledDeviceCount()); import torch; print(torch.__version__); print(torch.cuda.is_available())"`
+
+>>> 
 4.8.1
 1
 2.1.0+cu121
 True
-`
+```
